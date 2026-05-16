@@ -25,14 +25,16 @@
 
         <main class="main-content">
             <header class="main-header">
-                <h1 style="color: var(--azul-primario);">Cadastrar Novo Ecoponto</h1>
+                <h1 style="color: var(--azul-primario);">Gerenciar Ecopontos</h1>
             </header>
 
             <section class="content-section">
-                <form id="formEcoponto" onsubmit="alert('Novo ecoponto cadastrado na rede!'); return false;">
+                <form id="formCrudEcoponto">
+                    <input type="hidden" id="ecopontoId">
+                    
                     <div class="form-group">
-                        <label for="nomePonto">Nome do Ponto de Coleta / ONG Responsável</label>
-                        <input type="text" id="nomePonto" placeholder="Ex: Ecoponto Central" required>
+                        <label for="nomePonto">Nome do Ponto de Coleta</label>
+                        <input type="text" id="nomePonto" required>
                     </div>
 
                     <div class="form-group">
@@ -59,7 +61,27 @@
                     </div>
                 </form>
             </section>
+
+            <section class="content-section" style="margin-top: 20px;">
+                <h2 style="color: var(--azul-primario); font-family: 'Playfair Display SC', serif; margin-bottom: 15px;">Ecopontos Cadastrados</h2>
+                <div style="overflow-x: auto;">
+                    <table id="tabelaEcopontos" style="width: 100%; border-collapse: collapse; text-align: left;">
+                        <thead>
+                            <tr style="background-color: var(--azul-primario); color: var(--texto-claro);">
+                                <th style="padding: 12px; border-radius: 8px 0 0 0;">Nome</th>
+                                <th style="padding: 12px;">Endereço</th>
+                                <th style="padding: 12px;">Capacidade</th>
+                                <th style="padding: 12px;">Status</th>
+                                <th style="padding: 12px; border-radius: 0 8px 0 0;">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
         </main>
     </div>
+    <script src="crud_ecopontos.js"></script>
 </body>
 </html>
