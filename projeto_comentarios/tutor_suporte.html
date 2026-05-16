@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor - Suporte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Reciclagem</h2>
+                <span class="profile-badge">Perfil: Tutor</span>
+            </div>
+            <nav class="menu-nav">
+                <a href="tutor_apresentacao.html">Painel Inicial</a>
+                <a href="tutor_agendamento.html">Agendar Coleta</a>
+                <a href="tutor_suporte.html" class="active">Suporte & FAQ</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="tela_login.html">Sair do Sistema</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Suporte e Perguntas Frequentes</h1>
+            </header>
+
+            <section class="content-section" style="margin-bottom: 20px;">
+                <h2>Perguntas Frequentes (FAQ)</h2>
+                <div style="margin-top: 15px; display: flex; flex-direction: column; gap: 10px;">
+                    <details>
+                        <summary style="cursor:pointer; font-weight:500;">Como são calculados meus créditos?</summary>
+                        <p style="padding: 10px; color: #555;">Os créditos variam de acordo com o peso e o tipo de material descartado corretamente nos postos parceiros.</p>
+                    </details>
+                    <details>
+                        <summary style="cursor:pointer; font-weight:500;">Onde encontro os pontos de coleta?</summary>
+                        <p style="padding: 10px; color: #555;">Você pode consultar os pontos ativos diretamente no mapa de agendamentos do seu painel.</p>
+                    </details>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Fale Conosco</h2>
+                <form id="formSuporte" onsubmit="alert('Mensagem enviada com sucesso!'); return false;" style="margin-top: 15px;">
+                    <div class="form-group">
+                        <label for="mensagem">Escreva sua dúvida ou problema</label>
+                        <textarea id="mensagem" rows="4" style="width:100%; padding:10px; border-radius:8px; border:1px solid var(--cinza-claro);" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-confirmar">Enviar Mensagem</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

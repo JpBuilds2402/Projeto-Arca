@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura - Relatórios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar" style="background-color: var(--azul-primario);">
+            <div class="sidebar-header">
+                <h2>Reciclagem</h2>
+                <span class="profile-badge" style="background-color: var(--azul-secundario);">Perfil: Prefeitura</span>
+            </div>
+            <nav class="menu-nav">
+                <a href="prefeitura_apresentacao.html">Dashboard Municipal</a>
+                <a href="prefeitura_ecopontos.html">Gerenciar Ecopontos</a>
+                <a href="prefeitura_relatorios.html" class="active" style="background-color: var(--azul-secundario);">Relatórios da Cidade</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="tela_login.html">Sair do Sistema</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1 style="color: var(--azul-primario);">Relatórios de Desempenho</h1>
+            </header>
+
+            <section class="content-section">
+                <h2>Exportar Dados</h2>
+                <p style="color: #555; margin-bottom: 20px;">Selecione o período para gerar o relatório consolidado de coleta e emissões evitadas.</p>
+                
+                <div style="display: flex; gap: 20px; align-items: center;">
+                    <div class="form-group" style="margin: 0;">
+                        <input type="month" id="mesRelatorio">
+                    </div>
+                    <button class="btn-confirmar" style="background-color: var(--azul-primario); margin: 0;" onclick="alert('Gerando PDF...')">Baixar Relatório (PDF)</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

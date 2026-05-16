@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG - Registrar Recebimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Reciclagem</h2>
+                <span class="profile-badge">Perfil: ONG Parceira</span>
+            </div>
+            <nav class="menu-nav">
+                <a href="ong_apresentacao.html">Painel Geral</a>
+                <a href="ong_recebimento.html" class="active">Registrar Recebimento</a>
+                <a href="ong_estoque.html">Controle de Estoque</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="tela_login.html">Sair do Sistema</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Registrar Entrada de Resíduos</h1>
+            </header>
+
+            <section class="content-section">
+                <h2>Dados da Entrega</h2>
+                <form id="formRecebimento" onsubmit="alert('Entrada registrada. Pontos enviados ao candidato!'); return false;">
+                    <div class="form-group">
+                        <label for="cpfDoador">CPF do Candidato/Doador</label>
+                        <input type="text" id="cpfDoador" placeholder="000.000.000-00" required>
+                    </div>
+
+                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                        <div class="form-group" style="flex: 1; min-width: 250px;">
+                            <label for="tipoMaterial">Tipo de Material</label>
+                            <select id="tipoMaterial" required>
+                                <option value="">Selecione...</option>
+                                <option value="plastico">Plástico</option>
+                                <option value="papel">Papelão</option>
+                                <option value="vidro">Vidro</option>
+                                <option value="metal">Metal</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="flex: 1; min-width: 250px;">
+                            <label for="pesoReal">Peso Aferido (Kg)</label>
+                            <input type="number" step="0.1" id="pesoReal" placeholder="Ex: 5.5" required>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+                        <button type="submit" class="btn-confirmar">Confirmar Recebimento</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

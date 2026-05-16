@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura - Ecopontos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar" style="background-color: var(--azul-primario);">
+            <div class="sidebar-header">
+                <h2>Reciclagem</h2>
+                <span class="profile-badge" style="background-color: var(--azul-secundario);">Perfil: Prefeitura</span>
+            </div>
+            <nav class="menu-nav">
+                <a href="prefeitura_apresentacao.html">Dashboard Municipal</a>
+                <a href="prefeitura_ecopontos.html" class="active" style="background-color: var(--azul-secundario);">Gerenciar Ecopontos</a>
+                <a href="prefeitura_relatorios.html">Relatórios da Cidade</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="tela_login.html">Sair do Sistema</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1 style="color: var(--azul-primario);">Cadastrar Novo Ecoponto</h1>
+            </header>
+
+            <section class="content-section">
+                <form id="formEcoponto" onsubmit="alert('Novo ecoponto cadastrado na rede!'); return false;">
+                    <div class="form-group">
+                        <label for="nomePonto">Nome do Ponto de Coleta / ONG Responsável</label>
+                        <input type="text" id="nomePonto" placeholder="Ex: Ecoponto Central" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enderecoPonto">Endereço Completo</label>
+                        <input type="text" id="enderecoPonto" required>
+                    </div>
+
+                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                        <div class="form-group" style="flex: 1;">
+                            <label for="capacidade">Capacidade Máxima (Toneladas)</label>
+                            <input type="number" id="capacidade" required>
+                        </div>
+                        <div class="form-group" style="flex: 1;">
+                            <label for="status">Status Operacional</label>
+                            <select id="status" required>
+                                <option value="ativo">Ativo</option>
+                                <option value="manutencao">Em Manutenção</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+                        <button type="submit" class="btn-confirmar" style="background-color: var(--azul-primario);">Salvar Ecoponto</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Arca - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-wrapper">
+        <main class="login-container">
+            
+            <section class="login-left">
+                <div style="font-size: 60px; margin-bottom: 10px;">🚚♻️</div>
+                <h2>Reciclagem</h2>
+                <p>Seja bem-vindo ao futuro sustentável.<br>Juntos, transformamos o amanhã.</p>
+            </section>
+
+            <section class="login-right">
+                <form id="loginForm" onsubmit="validarLogin(event)">
+                    
+                    <div class="input-group">
+                        <label for="usuario">CNPJ / USUÁRIO</label>
+                        <input type="text" id="usuario" placeholder="Digite seu acesso" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="senha">SENHA</label>
+                        <input type="password" id="senha" placeholder="••••••••" required>
+                    </div>
+
+                    <div class="links-senha">
+                        <a href="#">ESQUECI MINHA SENHA</a>
+                    </div>
+
+                    <button type="submit" class="btn-confirmar">CONFIRMAR</button>
+                </form>
+
+                <div class="links-cadastro">
+                    <p>Não tem uma conta? <a href="#">Inscreva-se</a></p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

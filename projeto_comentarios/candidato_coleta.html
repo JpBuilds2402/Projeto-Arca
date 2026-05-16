@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidato - Coleta Seletiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Reciclagem</h2>
+                <span class="profile-badge">Perfil: Candidato</span>
+            </div>
+            <nav class="menu-nav">
+                <a href="candidato_apresentacao.html">Meu Impacto</a>
+                <a href="candidato_coleta.html" class="active">Coleta Seletiva</a>
+                <a href="candidato_perfil.html">Meu Perfil</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="tela_login.html">Sair da Conta</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Guia de Coleta e Ecopontos</h1>
+            </header>
+
+            <section class="metrics-grid">
+                <div class="card-metric" style="border-color: #FF0606;">
+                    <h3 style="color: #FF0606;">Plástico</h3>
+                    <p style="font-size: 14px; font-weight: normal; margin-top: 5px; color: #555;">Garrafas PET, potes, embalagens.</p>
+                </div>
+                <div class="card-metric" style="border-color: #022797;">
+                    <h3 style="color: #022797;">Papel</h3>
+                    <p style="font-size: 14px; font-weight: normal; margin-top: 5px; color: #555;">Jornais, revistas, caixas de papelão.</p>
+                </div>
+                <div class="card-metric" style="border-color: #FFE414;">
+                    <h3 style="color: #A69200;">Metal</h3>
+                    <p style="font-size: 14px; font-weight: normal; margin-top: 5px; color: #555;">Latinhas de alumínio, tampinhas.</p>
+                </div>
+                <div class="card-metric" style="border-color: #2AC718;">
+                    <h3 style="color: #2AC718;">Vidro</h3>
+                    <p style="font-size: 14px; font-weight: normal; margin-top: 5px; color: #555;">Garrafas, copos, frascos inteiros.</p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Encontre um Ponto de Coleta</h2>
+                <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 15px;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <div class="form-group">
+                            <label for="bairro">Filtrar por Bairro</label>
+                            <select id="bairro">
+                                <option>Todos os bairros</option>
+                                <option>Centro</option>
+                                <option>Zona Sul</option>
+                                <option>Zona Norte</option>
+                            </select>
+                        </div>
+                        <ul style="list-style: none; padding: 0; color: #555; line-height: 1.8;">
+                            <li> <strong>Ecoponto Central:</strong> Rua das Flores, 123</li>
+                            <li> <strong>Estação Recicla Sul:</strong> Av. Brasil, 4500</li>
+                        </ul>
+                    </div>
+                    <div style="flex: 1; min-width: 250px; background-color: var(--cinza-claro); border-radius: 8px; display: flex; align-items: center; justify-content: center; min-height: 200px;">
+                        <span style="color: var(--texto-escuro); font-weight: 500;">[ Mapa de Localização ]</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

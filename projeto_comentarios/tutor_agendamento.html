@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor - Agendar Coleta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Reciclagem</h2>
+                <span class="profile-badge">Perfil: Tutor</span>
+            </div>
+            <nav class="menu-nav">
+                <a href="tutor_apresentacao.html">Painel Inicial</a>
+                <a href="tutor_agendamento.html" class="active">Agendar Coleta</a>
+                <a href="tutor_suporte.html">Suporte & FAQ</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="tela_login.html">Sair do Sistema</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Agendar Coleta de Resíduos</h1>
+            </header>
+
+            <section class="content-section">
+                <form id="formColeta" onsubmit="alert('Coleta agendada com sucesso!'); return false;">
+                    <div class="form-group">
+                        <label for="tipoResiduo">Tipo de Resíduo</label>
+                        <select id="tipoResiduo" required>
+                            <option value="">Selecione...</option>
+                            <option value="plastico">Plástico / PET</option>
+                            <option value="papel">Papel e Papelão</option>
+                            <option value="metal">Metal / Alumínio</option>
+                            <option value="organico">Orgânico Compostável</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesoEstimado">Peso Estimado (em Kg)</label>
+                        <input type="number" id="pesoEstimado" min="1" placeholder="Ex: 10" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dataColeta">Data Desejada para Recolhimento</label>
+                        <input type="date" id="dataColeta" required>
+                    </div>
+
+                    <button type="submit" class="btn-confirmar" style="margin-top: 10px;">Confirmar Agendamento</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
